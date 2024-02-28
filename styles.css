@@ -2,6 +2,46 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 4px;
+  }
+  0% {
+    background-color: #00c853;
+  }
+  25% {
+    background-color: #a91212;
+  }
+  50% {
+    background-color: #487dd3;
+  }
+  75% {
+    background-color: yellowgreen;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.heading div {
+  height: 12px;
+  width: 10px;
+  border-radius: 20px;
+  animation-name: mymove;
+  background-color: cadetblue;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 .wrapper {
   background-image: url(assets/background.jpg);
   background-size: cover;
@@ -10,6 +50,7 @@ body {
   padding: 10px;
 }
 .container {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #8abe8a);
   min-height: 530px;
   width: 46%;
   margin: 55px auto;
